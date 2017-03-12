@@ -25,7 +25,7 @@ public class ContaCorrente extends Conta {
 				throw new Exception("O valor para saque é maior que o saldo disponível");
 			}
 		}
-		this.saldo = getSaldo() - valor;
+		this.saldo = this.getSaldo() - valor;
 		if (this.saldo < 0) {
 			this.saldoEspecial += this.getSaldo();
 		}

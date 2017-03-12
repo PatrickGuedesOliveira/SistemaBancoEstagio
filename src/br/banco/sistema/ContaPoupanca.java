@@ -29,7 +29,7 @@ public class ContaPoupanca extends Conta {
 				throw new Exception("O valor para saque é maior que o saldo disponível");
 			}
 		}
-		this.saldo = getSaldo() - valor;
+		this.saldo = this.getSaldo() - valor;
 	}
 
 	@Override
